@@ -13,9 +13,7 @@ Keys with _ aditional are values read with name (non-OpenGraph Standard) instead
 
 ## Usage
 	require 'OpenGraph.php';
-	$o = OpenGraph::fetch(
-	'http://hashtiv.link/7n55ZnyVim'
-	);
+	$o = OpenGraph::fetch('http://hashtiv.link/7n55ZnyVim'); /*Test URL with Hashtiv Data, replace with desired URL*/
 
 	$array =  (array) $o;
 	$array = str_replace('\\u0000', "", json_encode($array));
